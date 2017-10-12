@@ -59,9 +59,16 @@ public class gaussianElimination {
     
     static void printMatrix(double[][] Matrix){
         for (int i = 0; i < Matrix.length; i++) {
+            System.out.print("|");
             for (int j = 0; j < Matrix[0].length; j++) {
                 System.out.printf("%10.4f",Matrix[i][j]);
-				}
+                if(j<Matrix[0].length-2) System.out.print(", ");
+                if(j==2 && i==1) System.out.print("  |   =   |");
+                else if (j==Matrix[0].length-2) System.out.print("  |       |");
+                
+            }
+            System.out.print("   |");
+            System.out.println("");
         }
     }
         static void printAns(double[] Ans){
