@@ -15,7 +15,7 @@ public class gaussianElimination {
         int size = equation.length;
 
         //Forward Elimination
-        //First column only
+        //This loop use for calculate first column
         System.out.println("\n First Column");
         for (int i = 1; i < size; i++) {
             double temp = equation[i][0]/equation[0][0];
@@ -28,6 +28,7 @@ public class gaussianElimination {
             printMatrix(equation);
             System.out.println("");
         }
+            
         // From Second column and greater than
         System.out.println("\n >= Second Column");
         for (int i = 2; i < size; i++) {
