@@ -9,7 +9,7 @@ public class gaussianElimination {
             System.out.println("Equation Matrix");
             printMatrix(equation);
             solve(equation);
-        
+            System.out.println(Arrays.toString(equation));
     }
     static void solve(double[][] equation){
         int size = equation.length;
