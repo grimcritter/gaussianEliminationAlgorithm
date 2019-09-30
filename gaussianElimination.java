@@ -39,7 +39,7 @@ public class gaussianElimination {
                 
                 //System.out.print(equation[i-(i-1)][j]*temp+" ");
             }
-            System.out.println("After process "+(i-1));
+//             System.out.println("After process "+(i-1));
             printMatrix(equation);
             System.out.println("");
         }
