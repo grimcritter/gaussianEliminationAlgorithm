@@ -70,6 +70,7 @@ public class gaussianElimination {
             }
             System.out.print("   |");
             System.out.println("");
+            //System.out.println("gaussianEliminationAlgorithm hacktoberfest",maxErr);
         }
     }
         static void printAns(double[] Ans){
