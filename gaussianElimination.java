@@ -33,7 +33,7 @@ public class gaussianElimination {
         for (int i = 2; i < size; i++) {
             double temp = equation[i][i-(i-1)]/equation[i-(i-1)][i-(i-1)];
             //System.out.println("i"+i+" temp "+temp +" "+equation[i][i-(i-1)]+"/"+equation[i-(i-1)][i-(i-1)]);
-            
+            //Ex System.out.println("i"+i+" temp "+temp +" "+equation[i][i-(i-1)]+"/"+equation[i-(i-1)][i-(i-1)]);
             for (int j = 1; j < equation[0].length; j++) {
                 equation[i][j]-=equation[i-(i-1)][j]*temp;
                 
